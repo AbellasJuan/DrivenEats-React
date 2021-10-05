@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background: #eeeeee;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.header {
+  background: #cf2b2b;
+  padding: 15px;
+  color: #fff;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "Righteous", cursive;
+  margin-bottom: 5px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  margin: 10px 15px 0 15px;
+}
+
+/* .lista-opcoes {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 15px;
+  overflow: scroll;
+} */
+
+.opcao {
+  flex-shrink: 0;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin-right: 20px;
+  border: 0px solid transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 5px solid white;
+}
+
+.opcao.selecionada {
+  border-color: green;
+}
+
+.opcao img {
+  width: 150px;
+  height: 110px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit:contain;
+}
+
+.opcao h4 {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.opcao .descricao {
+  font-weight: 100;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.fechar-pedido {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fechar-pedido button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background: #cbcbcb;
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.fechar-pedido button.habilitado {
+  background: green;
+}
+
+.container-preco {
+  min-height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-preco button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container-preco .btn-mais {
+  color: green;
+}
+
+.container-preco .btn-menos {
+  color: red;
+}
