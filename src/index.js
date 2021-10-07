@@ -13,7 +13,6 @@ function App() {
         product.quantity = newQuantity;
         setCategories([...categories])
     }
-
     return (
         <>
             <Header />
@@ -99,7 +98,7 @@ const initalCategories = [
             {
                 id: 8,
                 name: "Pavê",
-                description: "Torta diretamente da Alemanha",
+                description: "Com certeza é pacumê",
                 price: 14.90,
                 quantity: 0,
                 imageUrl: "images/sobremesaPaveBolado.jpeg"
@@ -107,7 +106,7 @@ const initalCategories = [
             {
                 id: 9,
                 name: "Torta Alemã",
-                description: "Com certeza é pacumê",
+                description: "Torta diretamente da Alemanha",
                 price: 14.90,
                 quantity: 0,
                 imageUrl: "images/sobremesaTortaAlema.jpeg"

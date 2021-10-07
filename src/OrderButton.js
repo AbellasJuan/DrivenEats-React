@@ -1,11 +1,10 @@
 export default function OrderButton (props) {
-    
     const { categories } = props;
     const canFinisishOrder = checkIfAllCategoriesWereSelected(categories);
-    
+
     return (
         <div class="fechar-pedido">
-        <button class={ canFinisishOrder ? "habilitado" : ""} onClick={() => sendToZapZap(categories, canFinisishOrder)}>
+        <button class={ canFinisishOrder ? "habilitado" : ""} onClick={() => sendToWhatsapp(categories, canFinisishOrder)}>
         { canFinisishOrder ? "Fechar pedido" : "Selecione itens das 3 categorias"}
         </button>
     </div>
@@ -19,7 +18,7 @@ function checkIfAllCategoriesWereSelected (categories) {
     return selectedCategories.length === categories.length;   
 }
 
-function sendToZapZap (categories, canFinisishOrder) {
+function sendToWhatsapp (categories, canFinisishOrder) {
     if (!canFinisishOrder) return;
 
     let message = "Olá, gostaria de fazer um pedido:\n\n";
