@@ -14,8 +14,6 @@ You can try this out now: https://driven-eats-react-chi.vercel.app/
 This is a mobile web application where users can order a food combo and send the order to the restaurant WhatsApp. Below are the implemented features:
 
 - Home page where users can choose meals, drinks and desserts;
-- Confirmation order page;
-- Alerts to insert name and delivery address;
 - WhatsApp page review with an automatic message describing the selected items and the total to be paid;<br>
   _Business rule:_ Users have to choose at least one item per category. 
 
@@ -23,6 +21,7 @@ This is a mobile web application where users can order a food combo and send the
 - HTML5
 - CSS3
 - Javascript
+- React
 
 ### 🔹🔹Disclaimer
 There is no use of API in this project, that is why you will find all the items hardcoded in the index.html file. <br><br>
